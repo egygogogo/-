@@ -1,0 +1,88 @@
+html{
+    font-family: sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.info-box{
+    width: 450px;
+    height: 400px;
+    position: fixed;/*实现在左上角固定*/
+    top:0;
+}
+
+.fake-content{
+    background-color: #a60000;
+    color: white;
+    padding: 10px;
+    height: 2000px;
+    margin-left: 470px;
+}
+/* 样式化选项卡*/
+/*首先无序列表自带了padding和margin，需要先清除掉*/
+.info-box ul{
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.info-box li{
+    list-style-type: none;
+    width: 150px;
+    float: left;
+}
+
+.info-box li a{
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    background-color: red;
+    color: black;
+    text-align: center;
+    
+}
+
+/*实现一下tab1和tab2中间，tab2和tab3中间有竖线隔开的效果*/
+
+/*链接状态上的改变*/
+.info-box li a:focus
+,.info-box li a:hover{
+    background-color: #a60000;
+    color: white;
+
+}
+
+.info-box li a:active{
+    background-color:#a60000;
+    color: white;
+}
+
+
+/* 样式化内容面板*/
+.info-box .panels{
+    height: 352px;
+    position: relative;/*让子元素相对panels而不是html放置定位*/
+    clear: both;/*清除浮动,以免h2和p的大小不一致，导致影响布局剩余的部分*/
+}
+
+.info-box article{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 352px;
+    padding: 10px;
+    color: white;
+    background-color: #a60000;
+}
+
+.info-box .active-panel{
+    z-index: 1;
+}
+
+
+
+

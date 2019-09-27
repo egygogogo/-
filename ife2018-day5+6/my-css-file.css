@@ -1,0 +1,46 @@
+   
+
+div{
+    position: relative;
+    left: 0;
+    width: 100%;
+    background-color: #979797;
+    border-bottom: solid 1px #fff;
+}
+
+h1{
+    display: block;
+    border-right: solid 1px rgb(0, 0, 0);
+    width: 150px;
+    height: 70px;
+    text-align:center;/* 设置为定宽块级元素就没用了*/
+    position: relative;
+    margin: 0;
+    /*padding: 30px 0 0;*/
+    
+}
+
+.neirong{
+    display: inline-block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    margin-left: 10px;
+    border:none;
+    background-color:#dddddd;
+    margin: 1px;
+    padding-left: 50px;
+    
+    
+}
+
+.jianli{
+    background-color: #6e6e6e;
+    height: 80px;
+    text-align: left;
+    padding-top: 50px;
+    margin: 0;
+    width: 100%;
+}
