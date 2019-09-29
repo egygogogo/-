@@ -93,7 +93,7 @@ div{
     margin: 0;
 }
 
-/*li怎么可以位于ul的底部??????*/
+/*li的数字怎么可以位于ul的底部??????*/
 .banner li{
     display: inline-block;
     vertical-align: bottom;
@@ -123,6 +123,7 @@ div{
 nav{
     height: 50px;
     margin: 0 auto;
+    border-bottom: solid 1px rgb(185, 185, 185);
 }
 
 
@@ -138,8 +139,11 @@ nav{
     padding-top: 15px;
 }
 .content1 li{
+    position: relative;
+    top: 1px;/*这两个让li往下了1px，使得盖住横线*/
     float: left;
     border: solid rgb(185, 185, 185) 1px;
+    border-bottom:none;
     width: 120px;
     height: 45px;
     background-color:rgb(216, 216, 216);
@@ -152,18 +156,21 @@ nav{
     margin-top: 13px;
 }
 .content1 .active{
-    border-bottom:none;
+    border-bottom:white;
     background-color:white;
 }
 
 .content2 section{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
 }
+/*以上两个属性以及下面flex和white-space属性让内容自适应*/
 
 .content2 p{
-    display: inline-block;
+    flex: 1 1;
+    white-space: nowrap;
+    text-align: center;
     border: solid 1px rgb(185, 185, 185);
-    width: auto;
     padding: 80px;
     margin: 0.25%;
     font-size: 15px;
