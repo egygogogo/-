@@ -285,9 +285,10 @@ header img{
 }
 
 .content3{
-    padding-top: 60px;
+    padding-top: 100px;
     width: 980px;
     margin: 0 auto;
+    height: 1080px;
 }
 .content3 h1,.content3 p{
     text-align: center;
@@ -307,4 +308,120 @@ header img{
 
 .content3 img:nth-child(2n){
     float: right;
+}
+
+.content4{
+    height: 710px;
+}
+.content4 .write {
+    float: left;
+    width: 470px;
+    height: 560px;
+    margin-top: 72px;
+    margin-left: 287.5px;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.content4 .write h4{
+    margin: 45px;
+}
+
+.content4 .write input,.content4 .write button{
+    width: 370px;
+    height: 50px;
+    margin-bottom: 32px;
+    color: rgb(161, 161, 161);
+}
+
+.content4 .write input:last-of-type{
+    height: 145px;
+}
+.content4 .write button{
+    color: white;
+    background: black;
+}
+
+.content4 .contacts {
+    float: left;
+    width: 375px;
+    margin-left: 126px;
+}
+
+.content4 .contacts{
+    width: 350px;
+    margin: 155px 120px;
+}
+
+.content4 .contacts h3{
+    margin-bottom: 37px;
+    font-size: 42px;
+}
+
+.content4 .contacts p{
+    display: block;
+    margin-bottom: 70px;
+}
+
+.content4 .contacts div{
+    margin: 37px 0;
+}
+
+.content4 .contacts div p{
+    margin-left: 10px;
+    display: inline;
+}
+
+.footer {
+    height: 410px;
+    background-color: #141414;
+    color: #ffffff;
+}
+
+.footer h4 {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 46px;
+    opacity: 0.5;
+}
+
+.footer .enjoy p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 37px;
+}
+
+.footer .enjoy img {
+    margin-right: 27px;
+}
+
+.footer .learn {
+    float: left;
+    margin-left: 213px;
+    margin-top: 80px;
+}
+
+.footer .about {
+    float: left;
+    margin-left: 167px;
+    margin-top: 80px;
+}
+
+.footer .support {
+    float: left;
+    margin-left: 145px;
+    margin-top: 80px;
+}
+
+.footer .enjoy {
+    width: 320px;
+    float: left;
+    margin-left: 214px;
+    margin-top: 80px;
 }
