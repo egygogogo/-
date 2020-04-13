@@ -1,0 +1,67 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <p id="demo">你是谁？</p>
+    <button type="button" onclick= 'document.getElementById ("demo").innerHTML = "hello javascript";'>点击我</button>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "段落已被更改。";
+}    //先定义了一个myFunction函数，然后在button之中去调用
+</script>
+</head>
+
+<body>
+
+<h2>Head 中的 JavaScript</h2>
+
+<p id="demo">一个段落。</p> 
+
+<button type="button" onclick="myFunction()">试一试</button> /*引用了那个myfunction函数*/
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        document.getElementById("add-btn").onclick = function(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById ("second-number").value;
+            var c = a + b;
+        document.getElementById("result").innerHTML = '运算结果为：'+ c ;}//为什么是链接，不是相加呢？
+
+        document.getElementById("times-btn").onclick = function(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById ("second-number").value;
+            var c = a*b;
+        document.getElementById("result").innerHTML = '运算结果为：'+ c ;}
+
+    </script>
+</body>
+</html>
