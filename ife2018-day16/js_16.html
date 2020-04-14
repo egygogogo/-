@@ -50,38 +50,17 @@ function myFunction() {
     <button id="divide-btn">除</button>
     <p id="result">运算结果</p>
     <script>
-        let getNumbers = (sign) => {
-            let v1 = parseInt(document.querySelector('#first-number').value);
-            let v2 = parseInt(document.querySelector('#second-number').value);
-            switch (sign) {
-                case '*':
-                    return v1*v2;
-                    break;
-                case '+':
-                    return v1+v2;
-                    break;
-                case '-':
-                    return v1-v2;
-                    break;
-                case '/':
-                    return v1/v2;
-                    break;
-            }
-        };
-        let result = document.querySelector('#result');
-        //注意在点击时再去获取input的值，提前获取input的值一直是0
-        document.querySelector('#add-btn').addEventListener('click',() => {
-            result.innerHTML = getNumbers('+')
-        });
-        document.querySelector('#minus-btn').addEventListener('click',() => {
-            result.innerHTML = getNumbers('-')
-        });
-        document.querySelector('#times-btn').addEventListener('click',() => {
-            result.innerHTML = getNumbers('*')
-        });
-        document.querySelector('#divide-btn').addEventListener('click',() => {
-            result.innerHTML = getNumbers('/')
-        });
+        document.getElementById("add-btn").onclick = function(){
+            var a = Number(document.getElementById("first-number").value);
+            var b = Number(document.getElementById ("second-number").value);
+            var c = a + b;
+        document.getElementById("result").innerHTML = '运算结果为：'+ c ;}//为什么是链接，不是相加呢？
+
+        document.getElementById("times-btn").onclick = function(){
+            var a = document.getElementById("first-number").value;
+            var b = document.getElementById ("second-number").value;
+            var c = a*b;
+        document.getElementById("result").innerHTML = '运算结果为：'+ c ;}
 
     </script>
 </body>
