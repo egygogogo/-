@@ -1,0 +1,85 @@
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+<p>请输入5-10之间的数字</p>
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()" >检测输入</button>
+<p id="p01"></p>
+
+
+<script>
+    function myFunction() {
+        var message,x;
+        message = document.getElementById("p01");
+        message.innerHTML = "";
+        x = document.getElementById ("demo").value;
+        try {
+            if (x == "") throw "是空的";
+            if(isNaN(x)) throw "不是数字";
+            x = Number(x);
+            if(x < 5)  throw "太小";
+            if(x > 10)   throw "太大";
+        }
+        catch(err){
+            message.innerHTML = "输入：" + x + err;
+        }
+        
+        finally {
+        document.getElementById("demo").value = "";
+        }
+    }
+</script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="num1"   placeholder="第一个数字">
+    <input id="num2"   placeholder="第二个数字">
+    <button id="add-btn" onclick="addFunction()">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+        function addFunction(){
+        var message,x,y;
+        message = document.getElementById("result");
+        message.innerHTML = "";
+        x = document.getElementById ("num1").value;
+        y = document.getElementById ("num2").value;
+
+
+        try {
+            if (x ==""| y == ""|isNaN(x)|isNaN(y)) throw "输入内容有误";
+            if (typeof(x) == "number" & typeof(y) == "number"){
+                 break outermost;}
+        }
+        
+        
+        catch(err){
+            message.innerHTML = "结果为:" + err;
+            }
+
+        finally{
+            document.getElementById("num1").value= "";
+            document.getElementById("num2").value= "";
+            }
+
+        outermost:
+            message.innerHTML = "结果为" + x + y;
+
+
+
+    }
+        
+
+
+    </script>
+</body>
+</html>
